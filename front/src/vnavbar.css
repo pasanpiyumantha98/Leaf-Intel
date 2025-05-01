@@ -1,0 +1,161 @@
+/* Wrapper for the entire app (sidebar + content) */
+.app-container {
+  display: flex;
+  flex-direction: row; /* Desktop: sidebar to the left, content on the right */
+  height: 100vh;
+}
+
+/* MOBILE HEADER (hamburger + brand) */
+.mobile-header {
+  display: none; /* hidden by default (on desktop) */
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(6, 155, 73);
+  color: white;
+  padding: 0.5rem 1rem;
+  position: fixed; /* stays at the top on mobile */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001; /* above the sidebar */
+  height: 50px;
+}
+
+/* The logo in the mobile header */
+.mobile-logo img {
+  height: 30px;
+  width: auto;
+}
+
+/* Hamburger button style */
+.hamburger-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 165px;
+  background-color: rgb(6, 155, 73);
+  color: #ecf0f1;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+
+  /* By default, it's visible on desktop. We only move it off-screen on mobile. */
+  transition: transform 0.3s ease;
+  z-index: 1000; 
+}
+
+/* Hide the big .logo on mobile if you want 
+   (since it's in the .mobile-header anyway) */
+.logo img {
+  width: 130px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* NAV LINKS */
+.nav-links {
+  width: 100%;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column; /* icon above text */
+  align-items: center;
+  padding: 10px 0;
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: #34495e;
+}
+
+.icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+/* MAIN CONTENT */
+.content {
+  flex: 1; /* Take the remaining space */
+  padding: 1rem;
+  margin-top: 0; /* If you have a fixed header on mobile, you can do margin-top: 50px for spacing */
+  background-color: #f5f5f5;
+  overflow-y: auto;
+}
+
+/* FOOTER */
+.footer {
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(6, 155, 73);
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* --------------------------------------------------
+   MEDIA QUERIES
+--------------------------------------------------- */
+
+/* On screens < 768px (mobile): show the hamburger header,
+   push the sidebar off-screen by default, 
+   and let main content span full width. */
+@media (max-width: 767px) {
+  /* 1) Show the mobile header, hide the sidebar in the background */
+  .mobile-header {
+    display: flex;
+  }
+
+  /* 2) The sidebar slides off-screen by default */
+  .sidebar {
+    position: fixed;
+    top: 50px;      /* below the mobile header */
+    left: 0;
+    height: calc(100vh - 50px);
+    transform: translateX(-200px);
+  }
+
+  /* 3) When the sidebar has .open class, slide it in */
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  /* 4) Content takes full width */
+  .content {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 50px; /* so it's not under the fixed mobile header */
+  }
+}
+
+/* On screens >= 768px (desktop/tablet):
+   - Hide the mobile header
+   - Sidebar is always visible
+   - content is to the right of the sidebar. */
+@media (min-width: 768px) {
+  .mobile-header {
+    display: none;
+  }
+
+  .sidebar {
+    position: static;
+    transform: none;
+  }
+
+  .content {
+    margin-top: 0; 
+  }
+}

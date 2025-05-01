@@ -1,0 +1,235 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(6, 155, 73);
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+
+input[type=text], input[type=password] {
+  width: 300px ;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.success {background-color: #04AA6D;border: none;
+  color: white;
+  padding: 5px 18px;
+  font-size: 16px;
+  cursor: pointer;} /* Green */
+.success:hover {background-color: #46a049;border: none;
+  color: white;
+  padding: 5px 18px;
+  font-size: 16px;
+  cursor: pointer;}
+
+.info {background-color: #2196F3;border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;} /* Blue */
+.info:hover {background: #0b7dda;border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgb(6, 155, 73);
+  color: white;
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 4px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+
+
+.bg-primary-transparent {
+  background-color: rgba(247, 247, 247, 0.9);
+}
+
+
+.log {
+  background-color: rgb(77, 180, 123);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  min-height: 100vh; 
+}
+
+.custom-heading {
+  font-family: 'MyCustomFont', sans-serif;
+}
+
+.pagetitle{
+  color:  rgb(6, 155, 73);
+  padding-left: 75px;
+  padding-top: 30px;
+}
+.conftext{
+  color:  rgb(3, 100, 47);
+  padding-left: 100px;
+  
+}
+
+.conftitle{
+  color:  #069b49;
+  padding-left: 15px;
+  padding-top: 30px;
+}
+
+
+.figures {
+  color:  rgb(6, 155, 73);
+ 
+}
+
+.pad2{
+  padding-top: 30px;
+}
+
+.custom-card-body1 {
+  background-color: #e9eceae6;  /* dark gray */
+  color: #fff;                /* white text */
+}
+
+
+.personinfo{
+  padding-left: 100px;
+  font-weight:400;
+}
+
+.nounder {
+  text-decoration: none;
+}
+
+.inputfsmall {
+  /* Adjust the width to your needs */
+  width: 200px !important; /* overrides other rules */
+
+  /* Add some padding for comfortable text input */
+
+  /* A light border and subtle rounded corners */
+  border: 1px solid #9ff093;
+  border-radius: 4px;
+  /* Set a font size for clarity */
+  font-size: 14px;
+  /* Optional: Margin for spacing around */
+  margin: 4px 0;
+  /* Transition effect for a smoother focus/hover */
+  transition: border-color 0.4s;
+}
+
+/* Change border color when the input is focused */
+.inputfsmall:focus {
+  border-color: #1ee57b;
+  outline: none; /* Hide the default outline */
+}
+
+/* Example CSS file (styles.css) */
+.card-billing-set1 {
+  /* Your custom styles below */
+  background-color:#ccffcc;
+  color: rgb(2, 82, 25);
+  padding: 15px;
+  border: 0px solid #ced4da;
+  margin-bottom: 5px;
+  
+  /* You can add or change any styles you need here */
+}
+.card-billing-set2 {
+  /* Your custom styles below */
+  background-color:#97f6c0;
+  color: rgb(2, 82, 25);
+  padding: 15px;
+  border: 0px solid #ced4da;
+  margin-bottom: 5px;
+  
+  /* You can add or change any styles you need here */
+}
+.card-billing-set3 {
+  /* Your custom styles below */
+  background-color:#97f6c0;
+  color: rgb(2, 82, 25);
+  padding: 15px;
+  border: 0px solid #ced4da;
+  margin-bottom: 5px;
+  
+  /* You can add or change any styles you need here */
+}
+.card-billing-set4 {
+  /* Your custom styles below */
+  background-color:#cdf6c8;
+  color: rgb(2, 82, 25);
+  padding: 15px;
+  border: 0px solid #ced4da;
+  margin-bottom: 5px;
+  
+  /* You can add or change any styles you need here */
+}
+
+
+
