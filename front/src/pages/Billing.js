@@ -122,7 +122,7 @@ function Billing(){
 
       if(Transaction==="TransactionNotFound")
       {
-        toast.error("Transaction ID is incorrect!");
+        toast.error("Transaction ID is not correct!");
         
       }  else
       {
