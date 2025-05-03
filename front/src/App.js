@@ -48,7 +48,7 @@ function App() {
         <Route
           path="/dashboard"
           element={
-            <RequireAuth allowedCategories={["Manager", "Billing", "FO"]}>
+            <RequireAuth allowedCategories={["Manager", "Billing Clerk", "FO"]}>
               <Dashboard />
             </RequireAuth>
           }
@@ -56,7 +56,7 @@ function App() {
          <Route
           path="/bar"
           element={
-            <RequireAuth allowedCategories={["Manager", "Billing", "FO"]}>
+            <RequireAuth allowedCategories={["Manager", "Billing Clerk", "FO"]}>
               <BarChartExample />
             </RequireAuth>
           }
@@ -64,7 +64,7 @@ function App() {
         <Route
           path="/suppliers"
           element={
-            <RequireAuth allowedCategories={["Manager", "Billing", "FO"]}>
+            <RequireAuth allowedCategories={["Manager", "Billing Clerk", "FO"]}>
               <Suppliers />
             </RequireAuth>
           }
