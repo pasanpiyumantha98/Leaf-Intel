@@ -72,7 +72,7 @@ function App() {
         <Route
           path="/settings"
           element={
-            <RequireAuth allowedCategories={["Manager", "Billing", "FO"]}>
+            <RequireAuth allowedCategories={["Manager", "Billing Clerk", "FO"]}>
               <Settings />
             </RequireAuth>
           }
@@ -80,7 +80,7 @@ function App() {
         <Route
           path="/supplier-registration"
           element={
-            <RequireAuth allowedCategories={["Manager", "Billing", "FO"]}>
+            <RequireAuth allowedCategories={["Manager", "Billing Clerk", "FO"]}>
               <SupReg />
             </RequireAuth>
           }
@@ -89,7 +89,7 @@ function App() {
         <Route
           path="/supplier-profile/:Code"
           element={
-            <RequireAuth allowedCategories={["Manager", "Billing", "FO"]}>
+            <RequireAuth allowedCategories={["Manager", "Billing Clerk", "FO"]}>
               <SupProfile />
             </RequireAuth>
           }
