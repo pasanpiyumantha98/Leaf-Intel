@@ -22,7 +22,7 @@ app.add_middleware(
 )
 
 # Load model
-MODEL = tf.keras.models.load_model("./TeaQualityV11.keras")
+MODEL = tf.keras.models.load_model("./TeaQualityV15.keras")
 CLASS_NAMES = ["a", "b", "c", "uk"]
 
 @app.get("/ping")
