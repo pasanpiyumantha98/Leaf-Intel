@@ -161,7 +161,7 @@ function App() {
         <Route
           path="/payment-final"
           element={
-            <RequireAuth allowedCategories={["Manager", "Billing"]}>
+            <RequireAuth allowedCategories={["Manager", "Billing Clerk"]}>
               <PaymentFinal/>
             </RequireAuth>
           }
