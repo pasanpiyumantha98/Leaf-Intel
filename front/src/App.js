@@ -105,7 +105,7 @@ function App() {
         <Route
           path="/supplier-delete/:id"
           element={
-            <RequireAuth allowedCategories={["Manager", "Billing", "FO"]}>
+            <RequireAuth allowedCategories={["Manager", "Billing Clerk", "FO"]}>
               <SupDelete />
             </RequireAuth>
           }
