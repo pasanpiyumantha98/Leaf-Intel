@@ -14,7 +14,7 @@ function RequireAuth({ children, allowedCategories }) {
   }
 
   if (!allowedCategories.includes(user.accessLevel)) {
-    return <Navigate to="/home" replace />;
+    return <Navigate to="/dashboard" replace />;
   }
 
   // If authenticated, allow access to the protected page/component
