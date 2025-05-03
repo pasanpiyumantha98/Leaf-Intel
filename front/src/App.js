@@ -145,7 +145,7 @@ function App() {
         <Route
           path="/advance-success/:TransId"
           element={
-            <RequireAuth allowedCategories={["Manager", "Billing"]}>
+            <RequireAuth allowedCategories={["Manager", "Billing Clerk"]}>
               <AdvanceSuccess/>
             </RequireAuth>
           }
@@ -153,7 +153,7 @@ function App() {
          <Route
           path="/transaction/:TransId"
           element={
-            <RequireAuth allowedCategories={["Manager", "Billing"]}>
+            <RequireAuth allowedCategories={["Manager", "Billing Clerk"]}>
               <Transaction/>
             </RequireAuth>
           }
