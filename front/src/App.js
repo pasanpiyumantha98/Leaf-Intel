@@ -121,7 +121,7 @@ function App() {
         <Route
           path="/logout"
           element={
-            <RequireAuth allowedCategories={["Manager", "Billing", "FO"]}>
+            <RequireAuth allowedCategories={["Manager", "Billing Clerk", "FO"]}>
               <Logout/>
             </RequireAuth>
           }
@@ -137,7 +137,7 @@ function App() {
         <Route
           path="/billing"
           element={
-            <RequireAuth allowedCategories={["Manager", "Billing"]}>
+            <RequireAuth allowedCategories={["Manager", "Billing Clerk"]}>
               <Billing/>
             </RequireAuth>
           }
