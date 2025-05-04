@@ -269,7 +269,7 @@ app.get('/api/user/:id', async(req,res) =>{
   
   });
 
-  /// User Delete Function
+  /// User Delete by ID
   app.get('/api/user-delete/:id', async(req,res) =>{
     try {
       const id = parseInt(req.params.id);
@@ -323,7 +323,7 @@ app.delete('/api/user-delete/:id', async (req, res) => {
     }
   });
 
-  /// Settings Function Goal
+  /// Settings Function Goal ofr mpnth
   app.get('/api/settings/mgoal', async(req,res) =>{
     try {
       const set = await db.collection('AppSettings').findOne({ Name: "MonthlyGoal" });
