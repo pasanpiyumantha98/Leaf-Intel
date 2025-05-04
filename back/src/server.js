@@ -436,7 +436,7 @@ app.delete('/api/user-delete/:id', async (req, res) => {
     }
   });
 
-   /// Today QTY Function
+   /// Today ACC QTY Function
    app.get('/api/lots/today', async(req,res) =>{
     try {
 
@@ -481,7 +481,7 @@ res.json({ totalQtyReceivedToday });
     }
   });
 
-   /// Year QTY Function
+   /// Year ACC QTY Function
    app.get('/api/lots/year', async(req,res) =>{
     try {
 
@@ -525,7 +525,7 @@ res.json({ totalQtyReceivedYear });
     }
   });
 
-  /// Yesterday QTY Function
+  /// Yesterday ACC QTY Function
     app.get('/api/lots/yesterday', async(req,res) =>{
       try {
   
