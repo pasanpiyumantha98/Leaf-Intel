@@ -230,7 +230,7 @@ app.get('/api/supplier/:id', async(req,res) =>{
   
   });
 
-  /// Search User
+  /// Search User with ID
 app.get('/api/user/:id', async(req,res) =>{
 
   try {
@@ -256,7 +256,7 @@ app.get('/api/user/:id', async(req,res) =>{
 
 
 
-/// Supplier Delete Function
+/// Supplier Delete by ID
   app.get('/api/supplier-delete/:id', async(req,res) =>{
     try {
       const id = req.params.id;
