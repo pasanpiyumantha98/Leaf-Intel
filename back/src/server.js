@@ -41,16 +41,16 @@ res.send("Hello");
 
 app.post('/whatsapp-send/go', async (req, res) => {
   try {
-    const { to, body } = req.body;               // ① grab data from front-end
+    const { to, body } = req.body;               
     if (!to || !body) return res.status(400).send('Missing to/body');
 
-    const msg = await clientt.messages.create({   // ② call Twilio
-      from: 'whatsapp:+14155238886',             // sandbox number
-      to:   `whatsapp:${to}`,                    // user’s phone
-      body                                       // text
+    const msg = await clientt.messages.create({   
+      from: 'whatsapp:+14155238886',            
+      to:   `whatsapp:${to}`,                    
+      body                                       
     });
 
-    return res.json({ sid: msg.sid });           // ③ send SID back
+    return res.json({ sid: msg.sid });           
   } catch (err) {
     console.error(err);
     return res.status(500).send('WHATSAPP_SEND_FAILED');
