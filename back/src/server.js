@@ -123,23 +123,18 @@ app.get('/api/supplier/:id/pic', async (req, res) => {
       return res.status(404).send('No image found for this supplier');
     }
 
-    // 3) Check if it's a BSON Binary object
-    // If your console.log(supplier.Pic) reveals something like:
-    // { _bsontype: 'Binary', sub_type: 0, position: 1234, buffer: <Buffer ...> }
-    // you need to extract .buffer
+
     let picBuffer;
 
-    // If using the native MongoDB driver or Mongoose, you might do:
+   
     if (supplier.Pic.buffer) {
       picBuffer = supplier.Pic.buffer; 
     } else {
-      // If it is already a Buffer, for example, if you stored it with Mongoose
+     
       picBuffer = supplier.Pic; 
     }
 
-    // 4) Optionally determine correct mime type if stored, e.g.:
-    // res.set('Content-Type', supplier.PicMimeType || 'image/jpeg');
-
+  
     res.set('Content-Type', 'image/jpeg');
     return res.send(picBuffer);
 
