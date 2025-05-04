@@ -645,7 +645,7 @@ res.json({ totalQtyReceivedYear });
     }); 
 
 
-/// Month QTY Function
+/// Month ACC QTY Function
    app.get('/api/lots/month', async(req,res) =>{
     try {
 
