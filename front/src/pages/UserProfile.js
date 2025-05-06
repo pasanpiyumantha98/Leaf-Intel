@@ -25,28 +25,19 @@ function UserProfile(){
 
 
   useEffect(()=>{
-
-
     const loadSupplier = async() =>{
-
-        
     const response = await axios.get(`/api/user/${StaffId}`);
-
     const user = response.data;
-
     setUser(user);
-
     };
 
     loadSupplier();
-
 },[]);
 
 
     return(
         <>
   
-   
 <div className="app-container">
     <Header/>
   <main className="content">
