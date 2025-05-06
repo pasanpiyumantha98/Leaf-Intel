@@ -59,8 +59,7 @@ function UserProfile(){
   <div class="col-sm-3">  <div class="card">
     <div class="card-body">
       <h6 class="card-title"><center>{UserInfo.accessLevel}</center></h6>
-      
-      
+          
    </div>
   </div></div>
   </div>
@@ -78,20 +77,13 @@ function UserProfile(){
       <p class="personinfo">Email - {UserInfo.Email}</p>
       <p class="personinfo">Adress - {UserInfo.City}</p>
       <p class="personinfo">Phone Number - {UserInfo.Phone}</p>
-      <p class="personinfo">NIC - {UserInfo.NIC}</p>
-      
-      
-
+      <p class="personinfo">NIC - {UserInfo.NIC}</p>     
   </div>
 
   </div>
 
   <div class="row">
   <div class="col">
-
-      
-      
-
   </div>
 
   </div>
