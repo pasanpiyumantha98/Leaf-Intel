@@ -37,13 +37,6 @@ function App() {
 
         <Route path="/" element={<Login1 />} />
 
-        
-    
-        
-      
-    
-       
-
         {/* Protected routes */}
         <Route
           path="/dashboard"
