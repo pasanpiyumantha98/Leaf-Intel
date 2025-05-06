@@ -1204,30 +1204,30 @@ app.post('/api/supplier/makepay',async(req,res)=>{
     );
 
     const result1 = await db.collection("AppSettings").updateOne(
-      { Name: "MaxAdvance" }, // Filter
-      { $set: { Value: maxadvance }  }                // Update
+      { Name: "MaxAdvance" }, 
+      { $set: { Value: maxadvance }  }               
     );
 
     const result2 = await db.collection("AppSettings").updateOne(
-      { Name: "Rate" }, // Filter
-      { $set: { Value: rate }  }                // Update
+      { Name: "Rate" }, 
+      { $set: { Value: rate }  }                
     );
 
     const result3 = await db.collection("AppSettings").updateOne(
-      { Name: "Notice" }, // Filter
-      { $set: { Value: notice }  }                // Update
+      { Name: "Notice" }, 
+      { $set: { Value: notice }  }                
     );
     const result4 = await db.collection("AppSettings").updateOne(
-      { Name: "MonthlyGoal" }, // Filter
-      { $set: { Value: goal }  }                // Update
+      { Name: "MonthlyGoal" }, 
+      { $set: { Value: goal }  }               
     );
     const result5 = await db.collection("AppSettings").updateOne(
-      { Name: "YearlyGoal" }, // Filter
-      { $set: { Value: ygoal }  }                // Update
+      { Name: "YearlyGoal" }, 
+      { $set: { Value: ygoal }  }                
     );
     const result6 = await db.collection("AppSettings").updateOne(
-      { Name: "DailyGoal" }, // Filter
-      { $set: { Value: dgoal }  }                // Update
+      { Name: "DailyGoal" },
+      { $set: { Value: dgoal }  }                
     );
     
     
