@@ -237,7 +237,7 @@ function Settings(){
         className="form-control"
         type="text"
         id="phone"
-        placeholder="Phone Number"
+        placeholder=" Enter Phone Number"
         name="phone"
         value={phone}
         onChange={e => setPhone(e.target.value)}
