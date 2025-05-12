@@ -16,10 +16,10 @@ import logo from '../img/logo1.png';
 function Header() {
   const user = JSON.parse(localStorage.getItem('user')) || {};
 
-  // State to handle sidebar open/close on mobile
+  
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  // Toggle sidebar
+ 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
