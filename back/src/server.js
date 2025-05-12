@@ -1557,7 +1557,7 @@ app.get('/api/lotsfind/:id', async(req,res) =>{
     
           const results = await db.collection("LeafLots").aggregate(pipeline).toArray();
           
-          // Safely handle totalAccQty
+        
           const Qty = results[0]?.totalAccQty || 0; 
           
           if(mid!=0)
