@@ -72,7 +72,7 @@ return(
  <div class="form-group row">
   <div class="col-xs-2">
 
-    <input class="form-control" type="text" placeholder="Staff ID" name="uname" value={uname} onChange={q=>setuname(q.target.value)} required></input>
+    <input class="form-control" type="text" placeholder="UserName" name="uname" value={uname} onChange={q=>setuname(q.target.value)} required></input>
   </div>
   <div class="col-xs-3">
    
@@ -84,7 +84,7 @@ return(
   <button class="success" onClick={submitlogin}>Login</button>
   <br/>
   <br/>
- <Link to="/signup"> <p>Having troubles?</p></Link>
+ <Link to="/signup"> <p>Having issues?</p></Link>
  <br/>
 
  
