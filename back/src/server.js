@@ -1723,7 +1723,7 @@ app.get('/api/manager/phone', async(req,res) =>{
             insight=`The factory recived ${ACount} lots that are in A grade so far this month.`
           } else 
           {
-            insight=`No insights available at the moment!`
+            insight=`No insights available at the moment, Please check later!`
           }
 
 
