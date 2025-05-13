@@ -1713,7 +1713,7 @@ app.get('/api/manager/phone', async(req,res) =>{
 
         if(difference>0)
           {
-            insight=`The factory’s intake increased by ${difference} kilograms compared to yesterday, indicating a steady rise in supply.`
+            insight=`The factory’s intake increased by ${difference} kgs compared to yesterday, indicating a steady rise in supply.`
           } else if(SupCount>1)
           {
             insight=`${SupCount} new suppliers have been onboarded this month.`
