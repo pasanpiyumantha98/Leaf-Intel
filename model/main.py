@@ -11,7 +11,7 @@ app = FastAPI()
 origins = [
     "http://localhost",
     "http://localhost:3000",
-]
+]  #CORS Policy
 
 app.add_middleware(
     CORSMiddleware,
@@ -23,6 +23,8 @@ app.add_middleware(
 
 # Load model
 MODEL = tf.keras.models.load_model("./TeaQualityV15.keras")
+
+#Prediction Classes
 CLASS_NAMES = ["a", "b", "c", "uk"]
 
 @app.get("/ping")
