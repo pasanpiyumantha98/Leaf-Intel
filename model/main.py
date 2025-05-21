@@ -27,6 +27,7 @@ MODEL = tf.keras.models.load_model("./TeaQualityV15.keras")
 #Prediction Classes
 CLASS_NAMES = ["a", "b", "c", "uk"]
 
+#testing point
 @app.get("/ping")
 async def ping():
     return "Hello, I am alive"
