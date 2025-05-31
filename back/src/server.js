@@ -3,15 +3,11 @@ import { MongoClient,ServerApiVersion } from "mongodb";
 const uri = "mongodb+srv://pasanpiyumantha98:G30JMklKNHdfum19@cluster0.etw2b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 import multer from "multer";
 import bcrypt from 'bcrypt';
-       
-
-
-
 
 const upload = multer({ storage: multer.memoryStorage() });
 const SALT_ROUNDS = 10;  
 
-/// START Database SetUp
+//Database
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
