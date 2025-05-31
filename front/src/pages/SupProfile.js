@@ -137,7 +137,7 @@ useEffect(()=>{
   <div class="col">
 
       <p class="personinfo"><b>Supplier ID -</b> {SupInfo.Code}</p>
-      <p class="personinfo"><b>NIC -</b> {SupInfo.NIC}</p>
+      <p class="personinfo"><b>NIC Number-</b> {SupInfo.NIC}</p>
       <p class="personinfo"><b>Email -</b> {SupInfo.Email}</p>
       <p class="personinfo"><b>Adress -</b> {SupInfo.City}</p>
       <p class="personinfo"><b>Phone Number -</b> {SupInfo.Phone}</p>
